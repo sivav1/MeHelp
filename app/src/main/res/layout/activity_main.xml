@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgcolor"
+    android:fitsSystemWindows="true"
+    tools:context="student.op.mehelp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/act_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bgcolor"
+        tools:context="student.op.mehelp.MainActivity">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/headerbar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></include>
+
+        <RelativeLayout
+            android:id="@+id/callbtnblock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCall111"
+                style="@style/Call111ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40px"
+                android:background="@drawable/rounded_corner"
+                android:text="Call 111" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/callbtnblock"
+            android:orientation="vertical"
+            android:padding="20px">
+
+            <ListView
+                android:id="@+id/lstContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"></ListView>
+
+            <student.op.mehelp.TextViewWithImages
+                android:id="@+id/textView"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:background="#2196F3"
+                android:padding="50px"
+                android:textAlignment="center"
+                android:textSize="80px" />
+        </LinearLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/callbtnblock"
+            android:background="@color/contact_bgcolor"
+            android:layout_margin="10px">
+            <ImageView
+                android:id="@+id/contactImg"
+                android:layout_width="@dimen/contact_img_size"
+                android:layout_height="@dimen/contact_img_size"
+                android:src="@drawable/contact_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/contactImg">
+
+                    <ImageView
+                        android:layout_width="@dimen/call_icon_size"
+                        android:layout_height="@dimen/call_icon_size"
+                        android:layout_alignParentLeft="false"
+                        android:layout_weight="0.1"
+                        android:clickable="true"
+                        android:src="@drawable/call_icon" />
+                    <ImageView
+                        android:layout_width="@dimen/call_icon_size"
+                        android:layout_height="@dimen/call_icon_size"
+                        android:src="@drawable/message_icon"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:layout_weight="0.1"
+                        android:layout_gravity="right"/>
+                </LinearLayout>
+            </RelativeLayout>-->
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgcolor"
+    android:fitsSystemWindows="true"
+    tools:context="student.op.mehelp.AddContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bgcolor"
+        tools:context="student.op.mehelp.AddContactActivity"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/headerbar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></include>
+
+        <RelativeLayout
+            android:id="@+id/callbtnblock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCall111"
+                style="@style/Call111ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40px"
+                android:background="@drawable/rounded_corner"
+                android:text="Call 111" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutbuttonblock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callbtnblock"
+            android:layout_margin="10px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="30px"
+            android:paddingTop="0px">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/contactImg"
+                    android:layout_width="@dimen/contact_img_size"
+                    android:layout_height="@dimen/contact_img_size"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contact_icon" />
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/camera_icon" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtName"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="9"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="text" />
+
+                <ImageView
+                    android:id="@+id/btnContactList"
+                    android:layout_width="80px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/contactlist_icon" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtPhone"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:hint="Phone No"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txtRelation"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:hint="Relation"
+                android:inputType="text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="40px"
+                    android:background="#2196F3"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50px"
+                    android:layout_marginTop="40px"
+                    android:background="#D32F2F"
+                    android:text="Cancel" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

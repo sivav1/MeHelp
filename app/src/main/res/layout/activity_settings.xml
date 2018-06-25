@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgcolor"
+    android:fitsSystemWindows="true"
+    tools:context="student.op.mehelp.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bgcolor"
+        tools:context="student.op.mehelp.SettingsActivity"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/headerbar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></include>
+
+        <RelativeLayout
+            android:id="@+id/callbtnblock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCall111"
+                style="@style/Call111ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40px"
+                android:background="@drawable/rounded_corner"
+                android:text="Call 111" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutbuttonblock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callbtnblock"
+            android:layout_margin="20px">
+
+            <Button
+                android:id="@+id/btnAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0.5"
+                android:background="#2196F3"
+                android:clickable="true"
+                android:text="About Me"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/btnAddContact"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_weight="0.1"
+                android:clickable="true"
+                android:src="@drawable/add_contact_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutbuttonblock"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addressbookheading"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px"
+                android:background="#54C242"
+                android:padding="10px"
+                android:text="Address Book"
+                android:textAlignment="center"
+                android:textSize="50px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/addressbookheading"
+                android:orientation="vertical"
+                android:padding="20px">
+
+                <ListView
+                    android:id="@+id/lstContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"></ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

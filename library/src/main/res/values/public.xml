@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public name="camera" type="drawable" />
+    <public name="gallery" type="drawable" />
+    <public name="gallery_colored" type="mipmap" />
+    <public name="camera_colored" type="mipmap" />
+    <public name="picker_provider_paths" type="xml" />
+</resources>

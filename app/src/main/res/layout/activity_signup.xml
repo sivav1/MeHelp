@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgcolor"
+    android:fitsSystemWindows="true"
+    tools:context="student.op.mehelp.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bgcolor"
+        tools:context="student.op.mehelp.SignupActivity">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/headerbar_layout_no_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></include>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_margin="20px"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/imageFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="350px"
+                    android:layout_height="350px"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contact_icon" />
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/camera_icon" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/txtName"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageFrame"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/txtAddress"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtName"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:id="@+id/phoneField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAddress">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="0"
+                    android:paddingTop="30px"
+                    android:src="@drawable/phone_icon" />
+
+                <EditText
+                    android:id="@+id/txtMob"
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtAddress"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Mobile No"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtBlood"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/phoneField"
+                android:ems="10"
+                android:hint="Blood Group"
+                android:inputType="text"
+                android:maxLength="3" />
+
+            <EditText
+                android:id="@+id/txtFoodRisk"
+                style="@style/CustomEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtBlood"
+                android:ems="10"
+                android:hint="Food Risk"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFoodRisk"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="80px"
+                android:text="Sign Up" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

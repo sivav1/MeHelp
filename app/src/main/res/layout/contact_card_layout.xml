@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10px"
+    android:background="@color/contact_bgcolor"
+    android:padding="10px">
+
+    <ImageView
+        android:id="@+id/contactImg"
+        android:layout_width="@dimen/contact_img_size"
+        android:layout_height="@dimen/contact_img_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:src="@drawable/contact_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contactImg">
+
+        <ImageView
+            android:id="@+id/btnCall"
+            android:layout_width="@dimen/call_icon_size"
+            android:layout_height="@dimen/call_icon_size"
+            android:layout_alignParentLeft="false"
+            android:layout_weight="0.1"
+            android:clickable="true"
+            android:focusable="false"
+            android:src="@drawable/call_icon" />
+
+        <ImageView
+            android:id="@+id/btnText"
+            android:layout_width="@dimen/call_icon_size"
+            android:layout_height="@dimen/call_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="0.1"
+            android:clickable="true"
+            android:src="@drawable/message_icon" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MeHelp</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_delete_result">DeleteResultActivity</string>
+    <string name="text_config_help">Press [img src=menu_icon/] on top left corner of the screen to access Settings page and to configure contacts</string>
+    <string name="text_how_to_use">1. Press [img src=menu_icon/] on top left corner of the screen to access Settings page\n
+        On Settings Page:\n
+        1.1 . Tap [img src=add_contact_icon/] button to add new contacts.\n
+        1.2 . Tap [img src=edit_icon/] button to edit contacts\n
+        1.3 . Tap [img src=delete_contact_icon/] to delete contacts\n
+        2. Tap [img src=home_icon/] and then [img src=call_icon/] to call your emergency contact\n
+        3. Tap [img src=home_icon/] and then [img src=message_icon/] to text your emergency contact\n
+
+    </string>
+
+    <string-array name="blood_groups">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+</resources>
